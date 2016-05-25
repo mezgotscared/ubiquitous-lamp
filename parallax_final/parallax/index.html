@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Jack Dorsey's Tips for Success</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+<!----- LINK BACK TO THE TUTORIAL--->  
+
+</div>
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Tips for you </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
+		<li><a href="#slide2" title="Next Section">Slide 2</a></li>
+		<li><a href="#slide3" title="Next Section">Slide 3</a></li>
+		<li><a  href="#slide4" title="Next Section">Slide 4</a></li>
+		<li><a href="#slide5" title="Next Section">Slide 5</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+			<div id="christmas_tree"> </div>
+			<div id="snowflakes1"></div>
+			<div id="snowflakes2"></div>
+            <h1>How to Succeed</h1>
+		    <h2>With Jack Dorsey, creator of Twitter</h2>
+		    <div id="divider"> </div>
+		     <h3>In 4 easy steps </h3>
+           <div id="ribbon"></div>
+	       <div id="new_year"> </div>
+		</div> 
+    </div> 
+
+	<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+            <h2>Pick a Memorable Company Name</h2>
+		    <h3 class="quotes">It pays to have multiple people on your team. Jack Dorsey said the name "Twitter" was not his idea but a collection of many ideas. The term "Twitter" was found in the dictionary and the rest just fell into place afterwards. "Tweet" became the term for your posts and the little blue bird became the logo. </h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Jack Dorsey </h4>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+			    <h2> Make Your Project Personal</h2>
+		       <h3 class="quotes">"Twitter was born out of a desire to see from a personal level." Jack Dorsey first got a job as a programmer after he hacked a website and fixed all of it's holes. He had access to all of its  services in the city. He described the city services provided by the company as a vertical  standpoint. Twitter was a way to connect people together. "Whatever you can imagine, you can probably do"</h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Jack Dorsey </h4>
+		    </div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+              <div class="quotes_container">
+              <h2>It's OK to Not Know What You Want to Do</h2>
+		    <h3 class="quotes">Jack Dorsey was asked if, when he and his co-founders first started the site, he had a plan on what Twitter was going to be. He said, “We didn't really have any idea. But that's not why we were building it, we were building it because we wanted to; it was fun. It was something we wanted to see.” It's ok to not have a concrete plan at first so mess around with many ideas until you find one that you like a lot. </h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Jack Dorsey </h4>
+		</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+           <h2>Don't Stop After One Creation</h2>
+		    <h3 class="quotes">After Twitter, Jack Dorsey went on to create Square, a credit card transaction based company that made it easier for small businesses to charge their clients using an iPhone. This invention created by Square and Twitter has made Jack Dorsey so succesful today </h3>
+		  <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Jack Dorsey </h4>
+		  </div> 
+		<div id="copyright">Madeleine Zink</div>  
+		</div> 
+		
+
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
